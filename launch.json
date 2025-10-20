@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Run basic_sniffer",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/basic_sniffer.py",
+      "console": "integratedTerminal",
+      "args": [
+        "-i", "eth0",
+        "-c", "10",
+        "-f", "tcp and port 80",
+        "-w", "out.pcap"
+      ],
+      "cwd": "${workspaceFolder}",
+      "env": {}
+    }
+  ]
+}
